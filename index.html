@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/lixin-logo.ico">
+    <title>DV388.COM - Nhà cái xanh chín Uy tín hàng đầu Việt Nam</title>
+
+    <link rel="stylesheet" href="./assets/css/fontawesome-6.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/utils.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <!-- meta tags-->
+    <meta name="title" content="DVD388.COM" />
+    <meta name="author" content="DVD388.COM" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="DVD388.COM">
+    <meta name="robots" content="index,follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="DVD388.COM" />
+    <meta property="og:image" content="./assets/images/logo-large.png">
+    <meta property="og:description" content="DVD388.COM">
+
+</head>
+
+<body>
+    <!-- HEADER MOBILE -->
+    <div class="header-mobile hide-on-pc">
+        <img class="header-mobile-logo" src="./assets/images/logo-small.png" alt="">
+        <div class="header-mobile-left">
+            <div class="header-mobile-icon centering" onclick="toggleNavMobile()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV MOBILE -->
+    <div class="soft-menu" onclick="toggleNavMobile()">
+        <ul class="soft-menu__list" onclick="{(e) => e.stopPropagation();}">
+            <li class="soft-menu__item soft-menu__item--active">
+                <a class="" href="#home">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+            </li>
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="#games">
+                    <i class="fa-solid fa-dice"></i> Games
+                </a>
+            </li>
+
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="#service">
+                    <i class="fa-brands fa-servicestack"></i> Service
+                </a>
+            </li>
+
+            <div id="contact-sub" class="soft-menu__item soft-menu__item-sub flex-column">
+                <div class="ref-link w-100 ">
+                    <div class="d-flex align-items-center justify-content-between w-100">
+                        <div class="soft-menu__item-wrapper">
+                            <i class="fa-solid fa-phone-volume"></i> Contact Us
+                        </div>
+
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="soft-menu__item soft-menu__item-sub">
+                <a class="ref-link" href="#partner">
+                    <i class="fa-solid fa-people-group"></i> Partnership
+                </a>
+            </div>
+
+            <div class="soft-menu__item soft-menu__item-sub">
+                <a class="ref-link" href="#" id="testpopup" class="primary-button second" type="button"
+                    data-bs-toggle="modal" data-bs-target="#depositPopUp">
+                    <i class="fa-solid fa-money-check-dollar"></i> Deposit
+                </a>
+            </div>
+
+            <div class="soft-menu__item soft-menu__item-sub">
+                <a class="ref-link" href="#" id="testpopup" class="primary-button second" type="button"
+                    data-bs-toggle="modal" data-bs-target="#withDrawPopUp">
+                    <i class="fa-solid fa-hand-holding-dollar"></i> Withdraw
+                </a>
+            </div>
+
+            <div class="soft-menu__item soft-menu__item-sub">
+                <a class="ref-link" href="#" id="testpopup" class="primary-button second" type="button"
+                    data-bs-toggle="modal" data-bs-target="#registerPopUp">
+                    <i class="fa-solid fa-user-plus"></i> Sign up
+                </a>
+            </div>
+
+            <div class="soft-menu__item soft-menu__item-sub">
+                <a class="ref-link" href="#" class="primary-button" type="button" data-bs-toggle="modal"
+                    data-bs-target="#logInPopUp">
+                    <i class="fa-solid fa-right-to-bracket"></i> Login
+                </a>
+            </div>
+        </ul>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header hidden-m-t">
+        <!-- Top -->
+        <div class="header-top">
+            <div class="container d-flex align-items-center justify-content-between">
+                <div class="header-top-legal d-flex align-items-center">
+                    <img class="mr-3" src="/assets/images/header-legal.png" alt="">
+                    <span class="timenow">
+                        2023-07-23 13:10:15
+                    </span>
+                </div>
+                <div class="header-top-login">
+                    <form class="d-flex align-items-center primary-form" id="loginForm" oncontextmenu="return false;">
+                        <input type="text" name="username" placeholder="Tài khoản" class="input_tip">
+                        <input type="password" name="password" placeholder="Mật khẩu" class="form-underline">
+                        <input type="test" name="code" placeholder="Mã xác minh"
+                            class="verifi-code input_tip input_tip_45" maxlength="4">
+                        <img id="verifi" class="verifi-img"
+                            src="https://apix88.dv388.com/boxApi.php?109&amp;cmd=109&amp;verifiCode=0097">
+                        <a class="ReCode" oncontextmenu="return false;">
+                            <img id="img" src="https://www.dv388.com/images/recode.png" style="width:40px;">
+                        </a>
+                        <div class="primary-button">
+                            Đăng nhập
+                        </div>
+                        <div class="primary-button second">
+                            Đăng ký
+                        </div>
+                        <div class="forgot-password ml-2">
+                            Quên mật khẩu
+                        </div>
+                    </form>
+                </div>
+                <div class="header-top-language">
+                    <div class="header-top-language-actived">
+                        <img src="/assets/images/i_flag_vn.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nav -->
+        <div class="container">
+            <div class="header-wrapper align-items-center d-flex justify-content-between">
+                <a class="header-logo" href="/">
+                    <img src="./assets/images/logo.png" alt="" class="header-logo pl-2">
+                </a>
+
+                <div class="header-nav header-nav-main d-flex align-items-center justify-content-between">
+                    <a href="#" class="header-nav-item centering">
+                        LIVE CASINO
+                    </a>
+                    <a href="#" class="header-nav-item centering">
+                        GAME BÀI
+                    </a>
+                    <a href="#" class="header-nav-item centering">
+                        THỂ THAO
+                    </a>
+                    <a href="#" class="header-nav-item centering">
+                        GAME SLOT
+                    </a>
+                    <a href="#" class="header-nav-item centering">
+                        BẮN CÁ
+                    </a>
+                    <a href="#" class="header-nav-item centering">
+                        XỔ SỐ
+                    </a>
+                    <a href="#" class="header-nav-item centering">
+                        GAME KHÁC
+                    </a>
+                    <a href="#" class="header-nav-item centering highlight">
+                        ƯU ĐÃI
+                    </a>
+                    <a href="#" class="header-nav-item centering">
+                        ĐẠI LÝ
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- LARGE BANNER -->
+    <div id="home" class="l-banner wow animate__fadeInDown" data-wow-duration="0.5s">
+        <div class="swiper swiper-l-banner h-100">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a class="swiper-slide-img" href="/">
+                        <img src="/assets/images/banner-7.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="swiper-slide-img" href="/">
+                        <img src="/assets/images/banner-8.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="swiper-slide-img" href="/">
+                        <img src="/assets/images/banner-9.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="swiper-slide-img" href="/">
+                        <img src="/assets/images/banner-10.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- <div class="l-banner-navigation">
+            <div class="l-banner-navigation-wrapper d-flex align-items-center justify-content-center">
+                <div class="l-banner-navigation-item active"></div>
+                <div class="l-banner-navigation-item"></div>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- NOTIFICATION -->
+    <section class="noti">
+        <div class="container">
+            <div class="noti-wrapper d-flex align-items-center">
+                <div class="noti-icon">
+                    <img src="/assets/images/speaker.svg" alt="">
+                </div>
+                <div class="noti-content centering">
+                    <marquee onmouseover="this.stop();" onmouseout="this.start();">
+                        Từ 10/07/2023 • DV388 sẽ thay đổi phương thức hoàn trả từ hàng ngày thành hoàn trả không
+                        giới hạn mỗi tuần cho tất cả
+                        sảnh game.Tham gia cược lớn nhận hoàn trả siêu khủng cùng DV388. DV388 Uy tín xanh chín hàng
+                        đầu Việt Nam • Hotline :
+                        +63.8236.1131.Hỗ trợ trực tuyến 24/7 | NẠP - RÚT 5 phút.
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <div class="menu wow animate__fadeInUp" data-wow-duration="0.5s">
+        <div class="swiper swiper-menu h-100">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a class="swiper-slide-img" href="/">
+                        <img src="/assets/images/A_00.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="swiper-slide-img" href="/">
+                        <img src="/assets/images/A_03.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="swiper-slide-img" href="/">
+                        <img src="/assets/images/A_04.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="swiper-slide-img" href="/">
+                        <img src="/assets/images/A_05.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="swiper-slide-img" href="/">
+                        <img src="/assets/images/A_06.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="swiper-slide-img" href="/">
+                        <img src="/assets/images/A_07.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="swiper-button-next">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="content">
+        <div class="container">
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer wow animate__fadeInUp" data-wow-duration="0.5s">
+        <div class="container">
+            <div class="grid grid-3 grid-m-1">
+                <div class="footer-box">
+                    <div class="footer-title d-flex align-content-start">
+                        Giới thiệu
+                        <span>About us</span>
+                    </div>
+
+                    <img src="/assets/images/logo.png" alt="" class="footer-logo pl-2 mt-2">
+
+                    <div class="footer-text mt-2">
+                        DV388.COM - Nhà cái xanh chín Uy tín hàng đầu Việt Nam là một công ty hợp pháp đã đăng ký. Trước
+                        khi bạn đăng ký hoặc
+                        chơi một trang web, hãy chắc chắn rằng bạn đủ 18 tuổi và tuân theo luật pháp và quy định của địa
+                        phương.
+                    </div>
+                </div>
+
+                <div class="footer-box">
+                    <div class="footer-title d-flex align-content-start">
+                        Đối tác
+                        <span>Partner</span>
+
+                    </div>
+
+                    <img src="/assets/images/footer-partners.png" alt="">
+                </div>
+
+                <div class="footer-box">
+                    <div class="footer-title d-flex align-content-start">
+                        Hỗ trợ kỹ thuật
+                        <span>Technical Support</span>
+
+                    </div>
+
+                    <div class="centering">
+                        <img class="footer-secu mt-4" src="/assets/images/footer-secu.png" alt="">
+                    </div>
+                </div>
+
+                <div class="footer-box">
+                    <div class="footer-title d-flex align-content-start">
+                        Sử dụng trợ giúp
+                        <span>Guide</span>
+
+                    </div>
+
+                    <ul class="footer-list d-flex align-items-center flex-wrap justify-content-center">
+                        <li>
+                            <a href="" class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-right"></i>
+                                <span>Giới thiệu</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-right"></i>
+                                <span>Liên lạc với chúng tôi</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-right"></i>
+                                <span>Câu hỏi thường gặp</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-right"></i>
+                                <span>Hỗ trợ nạp tiền</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-right"></i>
+                                <span>Hỗ trợ rút tiền</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-box">
+                    <div class="footer-title d-flex align-content-start">
+                        Đại lý hợp tác
+                        <span>Tools</span>
+
+                    </div>
+
+                    <ul class="footer-list d-flex align-items-center flex-wrap justify-content-center">
+                        <li>
+                            <a href="" class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-right"></i>
+                                <span>Đề án đại lý</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-right"></i>
+                                <span>ĐẠI LÝ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-box">
+                    <div class="footer-title d-flex align-content-start">
+                        Trình duyệt được đề xuất
+                        <span>Browser</span>
+
+                    </div>
+
+                    <ul class="footer-list d-flex align-items-center flex-wrap justify-content-center">
+                        <li class="footer-browser">
+                            <a href="" class="d-flex flex-column justify-content-center align-items-center">
+                                <i class="fa-brands fa-internet-explorer"></i>
+                                <span>Tải xuống phiên bản IE mới</span>
+                            </a>
+                        </li>
+                        <li class="footer-browser">
+                            <a href="" class="d-flex flex-column justify-content-center align-items-center">
+                                <i class="fa-brands fa-chrome"></i>
+                                <span>Trình duyệt Chrome</span>
+                            </a>
+                        </li>
+                        <li class="footer-browser">
+                            <a href="" class="d-flex flex-column justify-content-center align-items-center">
+                                <i class="fa-brands fa-firefox-browser"></i>
+                                <span>Trình duyệt Firefox</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bottom legal line -->
+    <div class="bottom-legal text-center">
+        DV388.COM - Nhà cái xanh chín Uy tín hàng đầu Việt Nam Copyright© 2018 Casino Co.Group All Rights Reserved
+    </div>
+
+    <!-- LOADING -->
+    <div id="loading" class="loading centering">
+        <div class="loadingio-spinner-double-ring-17xm6tmici">
+            <div class="ldio-ni2prx9tf2k">
+                <div></div>
+                <div></div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCROLL TO TOP -->
+    <div class="scroll-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+</body>
+
+</html>
+
+<script src="./assets/js/swiper-bundle.min.js"></script>
+
+<script src="./assets/js/wow.min.js"></script>
+
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="./assets/js/main.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    /*  INIT WOWJS  */
+    wow = new WOW({
+        boxClass: "wow", // default
+        animateClass: "animated", // default
+        offset: 30, // default
+        mobile: true, // default
+        live: true, // default
+    });
+    wow.init();
+</script>
