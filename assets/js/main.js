@@ -2,36 +2,36 @@ const bind1 = document.querySelector.bind(document)
 const bind2 = document.querySelectorAll.bind(document)
 
 // utils
-const activeClass = (activeClass, listClass, activeIndex) => {
-    bind2(`.${listClass}`).forEach((item, index) => {
-        if(index === activeIndex){
-            item.classList.add(activeClass)
-        }else {
-            item.classList.remove(activeClass)
-        }
-    })
-}
+// const activeClass = (activeClass, listClass, activeIndex) => {
+//     bind2(`.${listClass}`).forEach((item, index) => {
+//         if(index === activeIndex){
+//             item.classList.add(activeClass)
+//         }else {
+//             item.classList.remove(activeClass)
+//         }
+//     })
+// }
 
 // mobile nav handler
-const toggleNavMobile = () => {
-    bind1('.soft-menu').classList.toggle('open')
-    bind1('.soft-menu__list').classList.toggle('open')
-}
+// const toggleNavMobile = () => {
+//     bind1('.soft-menu').classList.toggle('open')
+//     bind1('.soft-menu__list').classList.toggle('open')
+// }
 
-bind2('.soft-menu__item').forEach((element) => {
-    if(element.id !== 'contact-sub'){
-        element.onclick = (e) => {
-            toggleNavMobile()
-            bind1('.soft-menu').click()
-        }
-    }
-})
+// bind2('.soft-menu__item').forEach((element) => {
+//     if(element.id !== 'contact-sub'){
+//         element.onclick = (e) => {
+//             toggleNavMobile()
+//             bind1('.soft-menu').click()
+//         }
+//     }
+// })
 
-bind1('#contact-sub').onclick = (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    bind1('.soft-menu__item-sub-list').classList.toggle('open')
-}
+// bind1('#contact-sub').onclick = (e) => {
+//     e.preventDefault();
+//     e.stopPropagation();
+//     bind1('.soft-menu__item-sub-list').classList.toggle('open')
+// }
 
 
 // scoll to top

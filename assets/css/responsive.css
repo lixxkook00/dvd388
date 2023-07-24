@@ -3,8 +3,7 @@
     .hide-on-pc {
         display: none !important;
     }
-
-}
+}   
 
 
 /* PC only */
@@ -42,7 +41,17 @@
         justify-content: center !important;
     }
 
-    
+    .l-banner .swiper-pagination {
+        display: none;
+    }
+
+    .noti-wrapper {
+        padding: 10px 0;
+    }
+
+    .noti-icon i {
+        font-size: 20px;
+    }
 }
 
 
