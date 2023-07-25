@@ -677,6 +677,7 @@ input+input {
 .content {
     padding: 20px 0;
     background-color: #252525;
+    padding-bottom: 70px;
 }
 
 .content-wrapper {
