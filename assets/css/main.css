@@ -626,9 +626,10 @@ input+input {
 .navigation-tab__txt {
     display: block;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 10px;
     color: #A39680;
-    user-select: none
+    user-select: none;
+    margin-top: 3px;
 }
 
 .mobile-title {
@@ -925,7 +926,7 @@ input+input {
 
 .navigation-tab-item.center img {
     width: 30px;
-    transform: scale(1.4) translateY(-5px);
+    transform: scale(1.4) translateY(-7px);
 }
 
 .hidden {
