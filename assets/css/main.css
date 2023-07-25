@@ -526,6 +526,7 @@ input+input {
 .menu-mobile-wrapper {
     flex-wrap: nowrap;
     min-width: 140vw;
+    transition: all 0.5s ease;
 }
 
 .menu-mobile-item {
@@ -638,7 +639,7 @@ input+input {
 
 .mobile-title span {
     color: var(--primary-color);
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .line {
@@ -931,4 +932,8 @@ input+input {
 
 .hidden {
     display: none !important;
+}
+
+.primary-table {
+    overflow: scroll;
 }

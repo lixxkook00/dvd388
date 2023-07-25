@@ -52,6 +52,27 @@
     .noti-icon i {
         font-size: 20px;
     }
+
+    .infor-title {
+        width: 90px;
+    }
+
+    .infor-value {
+        font-size: 14px;
+    }
+
+    .credit-control+.credit-control {
+        border-left: none;
+    }
+
+    .credit-title {
+        width: auto;    
+        min-width: 70px;
+    }
+
+    .primary-table table {
+        min-width: 150vw;
+    }
 }
 
 
