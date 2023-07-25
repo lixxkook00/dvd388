@@ -1045,3 +1045,7 @@ input[type="checkbox"]:checked::before {
     font-size: 20px;
     margin-bottom: 15px;
 }
+
+.header-top-language {
+    opacity: 0;
+}
