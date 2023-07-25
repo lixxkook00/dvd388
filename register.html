@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/lixin-logo.ico">
+    <title>DV388.COM - Nhà cái xanh chín Uy tín hàng đầu Việt Nam</title>
+
+    <link rel="stylesheet" href="./assets/css/fontawesome-6.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/utils.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <!-- meta tags-->
+    <meta name="title" content="DVD388.COM" />
+    <meta name="author" content="DVD388.COM" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="DVD388.COM">
+    <meta name="robots" content="index,follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="DVD388.COM" />
+    <meta property="og:image" content="./assets/images/lA_05.jpg">
+    <meta property="og:description" content="DVD388.COM">
+
+</head>
+
+<body>
+    <!-- BACK -->
+    <a href="/" class="back d-flex align-items-center justify-content-start">
+        <i class="fa-solid fa-chevron-left"></i>
+    </a>
+
+    <!-- LOGIN -->
+    <div class="login centering">
+        <div class="container">
+            <div class="row centering">
+                <div class="col-lg-4 col-md-6 col-10">
+                    <div class="centering wow animate__zoomIn" data-wow-duration="0.8s">
+                        <img src="/assets/images/logo.png" alt="" class="login-logo">
+                    </div>
+                    <form class="primary-form wow animate__fadeInUp" data-wow-duration="0.5s">
+                        <div class="primary-form-name text-center gradient-text">
+                            ĐĂNG KÝ TÀI KHOẢN
+                        </div>
+
+                        <div class="primary-form-input centering justify-content-between">
+                            <i class="fa-solid fa-user-group"></i>
+                            <input type="text" placeholder="Người giới thiệu" name="" id="">
+                        </div>
+
+                        <div class="primary-form-input centering justify-content-between">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" placeholder="User name" name="" id="">
+                        </div>
+
+                        <div class="primary-form-input centering justify-content-between">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="Password" name="" id="">
+                            <div class="show-password"><i class="fa-solid fa-eye"></i></div>
+                        </div>
+
+                        <div class="primary-form-input centering justify-content-between">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="Nhập lại Password" name="" id="">
+                            <div class="show-password"><i class="fa-solid fa-eye"></i></div>
+                        </div>
+
+                        <div class="primary-form-input centering justify-content-between">
+                            <i class="fa-solid fa-phone"></i>
+                            <input type="text" placeholder="Số điện thoại" name="" id="">
+                        </div>
+
+                        <div class="primary-form-button gradient-button mt-3">
+                            Đăng ký
+                        </div>
+
+                        <div class="primary-form-button gradient-button">
+                            Đăng nhập
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOADING -->
+    <div id="loading" class="loading centering">
+        <div class="loadingio-spinner-double-ring-17xm6tmici">
+            <div class="ldio-ni2prx9tf2k">
+                <div></div>
+                <div></div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="./assets/js/swiper-bundle.min.js"></script>
+
+<script src="./assets/js/wow.min.js"></script>
+
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+<!-- <script src="./assets/js/main.js"></script> -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    /*  INIT WOWJS  */
+    wow = new WOW({
+        boxClass: "wow", // default
+        animateClass: "animated", // default
+        offset: 30, // default
+        mobile: true, // default
+        live: true, // default
+    });
+    wow.init();
+
+    const query = (selector) => {
+        return document.querySelector(selector);
+    }
+
+    const queryAll = (selector) => {
+        return document.querySelectorAll(selector);
+    }
+
+    window.addEventListener('load', (event) => {
+        query('.loading').style.display = "none"
+    });
+
+    queryAll('.show-password').forEach(icon => {
+        icon.onclick = () => {
+            console.log()
+            if (icon.childNodes[0].classList[1] === 'fa-eye') {
+                icon.childNodes[0].classList.remove('fa-eye')
+                icon.childNodes[0].classList.add('fa-eye-slash')
+                icon.parentNode.querySelector('input').type = 'text'
+            } else {
+                icon.childNodes[0].classList.remove('fa-eye-slash')
+                icon.childNodes[0].classList.add('fa-eye')
+                icon.parentNode.querySelector('input').type = 'password'
+            }
+        }
+    })
+
+</script>

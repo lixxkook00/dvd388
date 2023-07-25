@@ -137,6 +137,10 @@ img {
   max-width: 100%;
 }
 
+label {
+  margin-bottom: 0;
+}
+
 a {
   display: inline-block;
   color: unset;
@@ -438,7 +442,7 @@ button:focus {
 } */
 
 .gradient-text {
-  background: -webkit-linear-gradient(180deg, #B0BFFF 0%, #3D62FF 77.6%, #9AAEFF 100%);
+  background: linear-gradient(180deg, #fada5a 0%, #8C6C0E 50%, #fada5a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
