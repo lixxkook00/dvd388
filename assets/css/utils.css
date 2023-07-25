@@ -123,6 +123,7 @@ body {
 
 body {
   background-size: cover;
+  padding: 0 !important;
 }
 
 ul {

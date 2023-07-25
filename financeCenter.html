@@ -587,7 +587,7 @@
                                             CHUYỂN
                                             TIỀN để được cộng điểm tự động.
                                         </div>
-                                        <div class="primary-button form-button">
+                                        <div class="primary-button form-button"  data-bs-toggle="modal" data-bs-target="#depositPopUpBanking">
                                             Chuyển khoản ngân hàng
                                         </div>
                                     </div>
@@ -972,6 +972,127 @@
         HP388.COM - Nhà cái xanh chín Uy tín hàng đầu Việt Nam Copyright© 2018 Casino Co.Group All Rights Reserved
     </div>
 
+     <!-- Deposit With Banking-->
+    <div class="modal fade" id="depositPopUpBanking" tabindex="1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" class="primary-popup">
+                    <div class="primary-popup-header">
+                        <div class="primary-popup-header-name gradient-text text-center">
+                            Chuyển khoản ngân hàng
+                        </div>
+
+                        <div class="primary-popup-header-close">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="primary-popup-content" data-dismiss="modal">
+                        <div class="step d-flex justify-content-between">
+                            <div class="step-text">
+                                <i class="fa-solid fa-caret-right"></i> Step 1
+                            </div>
+                            <div class="step-content">
+                                Deposit to this account
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-title">
+                                Bank Name
+                            </div>
+                            <div class="contact-form-input">
+                                <i class="fa-solid fa-house"></i>
+                                <input placeholder="User name" type="text" value="Sacombank" disabled>
+                            </div>
+                            <div class="error-message">
+                                <!-- Error message -->
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-title">
+                                Account number
+                            </div>
+                            <div class="contact-form-input">
+                                <i class="fa-solid fa-hashtag"></i>
+                                <input placeholder="User name" type="text" value="686868686868" disabled>
+                            </div>
+                            <div class="error-message">
+                                <!-- Error message -->
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-title">
+                                Account name
+                            </div>
+                            <div class="contact-form-input">
+                                <i class="fa-solid fa-signature"></i>
+                                <input placeholder="User name" type="text" value="Brian" disabled>
+                            </div>
+                            <div class="error-message">
+                                <!-- Error message -->
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-title">
+                                Deposit code
+                            </div>
+                            <div class="contact-form-input">
+                                <i class="fa-solid fa-barcode"></i>
+                                <input placeholder="User name" type="text" value="thisaccountdeposit" disabled>
+                            </div>
+                            <div class="error-message">
+                                <!-- Error message -->
+                            </div>
+                        </div>
+
+                        <div class="step d-flex justify-content-between">
+                            <div class="step-text">
+                                <i class="fa-solid fa-caret-right"></i> Step 2
+                            </div>
+                            <div class="step-content">
+                                Information verification
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-title">
+                                Money transfer code
+                            </div>
+                            <div class="contact-form-input">
+                                <i class="fa-solid fa-barcode"></i>
+                                <input placeholder="Money transfer code - xxxx" type="text" value="">
+                            </div>
+                            <div class="error-message">
+                                <!-- Error message -->
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-title">
+                                Amount
+                            </div>
+                            <div class="contact-form-input">
+                                <i class="fa-solid fa-money-bill"></i>
+                                <input placeholder="Amount - x0,000,000 (USD)" type="number" value="">
+                            </div>
+                            <div class="error-message">
+                                <!-- Error message -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="primary-popup-buttons">
+                        <a href="#" class="primary-button">
+                            Gửi
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <!-- LOADING -->
     <div id="loading" class="loading centering">
         <div class="loadingio-spinner-double-ring-17xm6tmici">
@@ -997,13 +1118,13 @@
 
 </html>
 
-<script src="./assets/js/swiper-bundle.min.js"></script>
+<script src="/assets/js/swiper-bundle.min.js"></script>
 
-<script src="./assets/js/wow.min.js"></script>
+<script src="/assets/js/wow.min.js"></script>
 
-<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
 
-<script src="./assets/js/main.js"></script>
+<script src="/assets/js/main.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -1129,5 +1250,13 @@
 
     // actived moible nav by onclick
     activeClassOnClick('active', 'menu-mobile-item')
+
+    // close popup
+    queryAll('.primary-popup-header-close').forEach((closebtn) => {
+        closebtn.onclick = () => {
+            console.log(closebtn.parentNode.parentNode.parentNode.parentNode.parentNode)
+            closebtn.parentNode.parentNode.parentNode.parentNode.parentNode.click()
+        }
+    })
 
 </script>
