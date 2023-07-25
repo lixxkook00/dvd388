@@ -1046,6 +1046,8 @@ input[type="checkbox"]:checked::before {
     margin-bottom: 15px;
 }
 
+.header-mobile-language,
 .header-top-language {
-    opacity: 0;
+    opacity: 0 !important;
+    user-select: none !important;
 }
