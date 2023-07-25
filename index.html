@@ -46,7 +46,7 @@
 
                 <div class="header-top-login">
                     <!-- Login Form -->
-                    <!-- <form class="d-flex align-items-center primary-form" id="loginForm" oncontextmenu="return false;">
+                    <form class="d-flex align-items-center primary-form" id="loginForm" oncontextmenu="return false;">
                         <input type="text" name="username" placeholder="Tài khoản" class="input_tip">
                         <input type="password" name="password" placeholder="Mật khẩu" class="form-underline">
                         <input type="test" name="code" placeholder="Mã xác minh"
@@ -56,7 +56,7 @@
                         <a class="ReCode" oncontextmenu="return false;">
                             <img id="img" src="https://www.dv388.com/images/recode.png" style="width:40px;">
                         </a>
-                        <div class="primary-button">
+                        <div id="login" class="primary-button">
                             Đăng nhập
                         </div>
                         <div class="primary-button second">
@@ -65,10 +65,10 @@
                         <div class="forgot-password ml-2">
                             Quên mật khẩu
                         </div>
-                    </form> -->
+                    </form>
 
                     <!-- Loggned Navs -->
-                    <div class="logged centering">
+                    <div id="logged" class="logged centering hidden">
                         <div class="logged-item centering">
                             <i class="fa-solid fa-user"></i>
                             <a href="/" class="logged-title">
@@ -137,7 +137,7 @@
                             </div>
                         </div>
 
-                        <div class="primary-button third ml-3">
+                        <div id="logout" class="primary-button third ml-3">
                             Đăng xuất
                         </div>
                     </div>
@@ -1138,6 +1138,17 @@
                 item.classList.remove(activeClass)
             }
         })
+    }
+
+    // 
+    query('#logout').onclick = () => {
+        query('#loginForm').classList.remove('hidden')
+        query('#logged').classList.add('hidden')
+    }
+
+    query('#login').onclick = () => {
+        query('#loginForm').classList.add('hidden')
+        query('#logged').classList.remove('hidden')
     }
 
     // const catchElement = () => {

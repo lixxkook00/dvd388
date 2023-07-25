@@ -926,3 +926,7 @@ input+input {
     width: 30px;
     transform: scale(1.4) translateY(-5px);
 }
+
+.hidden {
+    display: none !important;
+}
